@@ -12,5 +12,14 @@ http://programming-motherfucker.com/
 
 */
 if (window.location.hostname == "www.facebook.com") {
-	window.location = 'http://kreattiewe.co/motherfokus';
+	chrome.storage.local.get("status_data", function(r){
+	  if(!r.status_data){
+	    window.location = 'http://kreattiewe.co/motherfokus';
+	  }
+	  
+	  if(r.status_data!="not-enabled"){
+	  	window.location = 'http://kreattiewe.co/motherfokus';
+	  }  
+	});
 }
+

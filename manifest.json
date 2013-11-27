@@ -1,12 +1,13 @@
 {
   "name": "MotherFokus",
   "description": "no more distractions with facebook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "background": {
     "scripts": [
       "background.js"
     ]
   },
+  "options_page": "options.html",
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
     "js": ["background.js"],
@@ -22,9 +23,11 @@
   "manifest_version": 2,
   "minimum_chrome_version": "23",
   "permissions": [
-    "http://*/*", "https://*/*"
+    "http://*/*", "https://*/*","storage"
   ],
   "web_accessible_resources": [
+    "img/background.png",
+    "img/bgheader.png",
     "img/icon64.png"
   ]
 }
