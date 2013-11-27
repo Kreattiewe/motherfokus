@@ -1,0 +1,30 @@
+{
+  "name": "MotherFokus",
+  "description": "no more distractions with facebook",
+  "version": "0.0.1",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["background.js"],
+    "all_frames": true
+  }],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "16": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "incognito": "spanning",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "permissions": [
+    "http://*/*", "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "img/icon64.png"
+  ]
+}
