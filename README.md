@@ -9,3 +9,4 @@ Do you speak it?
 http://programming-motherfucker.com/
 
 Kreattiewe Inc 2013
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Kreattiewe/motherfokus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
